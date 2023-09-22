@@ -1,17 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
-namespace Packt.Shared;
-
-public class Category
+namespace Packt.Shared
 {
-    //이 프로퍼티들은 DB 컬럼에 맵핑
-    public int CategoryId { get; set; }
+	[Index(nameof(CategoryName), Name = "CategoryName")]
+	public partial class Category
+	{
+		public Category()
+		{
+			Products = new HashSet<Product>();
+		}
 
-    [Column(TypeName="nvarchar (15)")]
-    public string? CategoryName { get; set; } = null!;
+		[Key]
+		public int CategoryId { get; set; }
 
-    public string? Description { get; set; }
+		[Required]
+		[Column(TypeName = "nvarchar (15)")]
+		[StringLength(15)]
+		public string CategoryName { get; set; } = null!;
 
+		[Column(TypeName = "ntext")]
+		public string? Description { get; set; }
+
+		[Column(TypeName = "image")]
+		public byte[]? Picture { get; set; }
+
+		[InverseProperty(nameof(Product.Category))]
+		public virtual ICollection<Product> Products { get; set; }
+	}
 }

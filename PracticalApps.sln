@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.EntityModels.Sqlite", "Northwind.Common.EntityModels.Sqlite\Northwind.Common.EntityModels.Sqlite.csproj", "{C855F786-DFBD-4AB7-971B-8707CB07CD69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.EntityModels.Sqlite", "Northwind.Common.EntityModels.Sqlite\Northwind.Common.EntityModels.Sqlite.csproj", "{C855F786-DFBD-4AB7-971B-8707CB07CD69}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.Sqlite", "Northwind.Common.DataContext.Sqlite\Northwind.Common.DataContext.Sqlite.csproj", "{F788568F-7060-4066-92B6-26F730E0DB10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.DataContext.Sqlite", "Northwind.Common.DataContext.Sqlite\Northwind.Common.DataContext.Sqlite.csproj", "{F788568F-7060-4066-92B6-26F730E0DB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.EntityModels.SqlServer", "Northwind.Common.EntityModels.SqlServer\Northwind.Common.EntityModels.SqlServer.csproj", "{D65E2A9D-806A-4DB3-91A1-7E3BE59921D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.EntityModels.SqlServer", "Northwind.Common.EntityModels.SqlServer\Northwind.Common.EntityModels.SqlServer.csproj", "{D65E2A9D-806A-4DB3-91A1-7E3BE59921D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Common.DataContext.SqlServer", "Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{AEA03D9A-39D7-4F6A-A5DD-E897359718CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.Common.DataContext.SqlServer", "Northwind.Common.DataContext.SqlServer\Northwind.Common.DataContext.SqlServer.csproj", "{AEA03D9A-39D7-4F6A-A5DD-E897359718CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Northwind.web", "Northwind.web\Northwind.web.csproj", "{C483E309-9AE0-4AC4-BDF3-D7640A5E21D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AEA03D9A-39D7-4F6A-A5DD-E897359718CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA03D9A-39D7-4F6A-A5DD-E897359718CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA03D9A-39D7-4F6A-A5DD-E897359718CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C483E309-9AE0-4AC4-BDF3-D7640A5E21D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C483E309-9AE0-4AC4-BDF3-D7640A5E21D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C483E309-9AE0-4AC4-BDF3-D7640A5E21D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C483E309-9AE0-4AC4-BDF3-D7640A5E21D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
